@@ -1,0 +1,55 @@
+/* Estilos Generales */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #f4f4f4; }
+header { background: #003366; color: white; padding: 1rem; text-align: center; }
+nav button { background: #ffcc00; border: none; padding: 10px 20px; cursor: pointer; font-weight: bold; border-radius: 5px; margin: 5px; }
+
+/* Pantalla de Login Full */
+.modulo-login-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #003366 0%, #001a33 100%);
+}
+
+.login-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 350px;
+}
+
+.login-card input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botones-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-primario { background: #003366; color: white; border: none; padding: 12px; border-radius: 5px; cursor: pointer; font-size: 16px; }
+.btn-secundario { background: #ffcc00; color: #003366; border: none; padding: 10px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+
+/* Estilos de los Módulos */
+.modulo { padding: 20px; max-width: 1000px; margin: auto; }
+.grid-productos { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+.card-producto { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+
+.carrito { margin-top: 30px; background: #fff; padding: 20px; border-top: 5px solid #003366; border-radius: 8px; }
+table { width: 100%; border-collapse: collapse; background: white; margin-top: 10px; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+th { background: #003366; color: white; }
+
+@media (max-width: 600px) {
+    nav button { width: 100%; margin: 2px 0; }
+}
